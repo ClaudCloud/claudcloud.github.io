@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:ital,wght@0,100..900;1,100..900&family=Genos:ital,wght@0,100..900;1,100..900&family=Itim&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />  <!-- required by html5 -->
+    <title>Video Game Accessibility</title>
+    <meta name="viewport" content="width=device-width" /> <!-- makes the content width be the width of the device, phone-friendly -->
+
+    <style>
+        .checklist {
+            overflow: auto;
+            width: 100%;
+        }
+        
+        .checklist table {
+            border: 3px solid #000000;
+            height: 100%;
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+            border-spacing: 1px;
+            text-align: left;
+        }
+        
+        .checklist caption {
+            caption-side: top;
+            text-align: left;
+        }
+        
+        .checklist th {
+            border: 3px solid #000000;
+            background-color: #ffbae4;
+            color: #000000;
+            padding: 5px;
+
+            
+        }
+        
+        .checklist td {
+            border: 3px solid #000000;
+            background-color: #f9dffe;
+            color: #000000;
+            padding: 5px;
+        }
+        </style>
+</head>
+
+<body>
+  <p id="skip" tabindex=0><a tabindex=0 href="#main">Skip to main section</a></p>
+  <header>
+
+    <div class="logo-and-title">
+        <a href="/videoGames/home.html">
+            <img class="logo" tabindex=0 src="textLogo.png" alt="Button takes you to home/about page.">
+        </a>
+      </div>
+
+    <nav tabindex=0 class="main-menu">
+        <ul class="menu">
+            <li tabindex=0 ><a href="/videoGames/home.html">About</a></li>
+            <li tabindex=0 ><a href="/videoGames/CVAA.html">Video Accessibility Act</a></li>
+            <li tabindex=0 ><a href="/videoGames/history.html">History of Game Dev</a></li>
+            <li tabindex=0 ><a id="last" href="/videoGames/guidelines.html">Dev Guidelines</a></li>
+            <li tabindex=0 ><a id="last" href="/videoGames/perspectives.html">Gamer's Perspectives</a></li>
+            <li tabindex=0 ><a id="last" href="/videoGames/resources.html">Resources for Dev</a></li>
+            <li tabindex=0 id="last" ><a href="/videoGames/bibliography.html">Bibliography</a></li>
+            <li tabindex=0 id="last" ><a href="/videoGames/contact.html">Contact Me</a></li>
+        </ul>
+    </nav>
+  </header>
+  
+    <main tabindex=0 id="main">
+
+        <div class="about">
+        <section id="second" tabindex=0>
+            <h1 tabindex=0  id="vocan">Includification [3]</h1>
+                <p tabindex=0 >
+                    Includification is a term I was introducted to by the non-profit organization AbleGamers.
+                    To me, the word refers to the act of making something inclusive–which brings the idea that 
+                    the object, activity, or space had previously not been inclusive or had some sort of barrier 
+                    of access from the start. I really like this new term to define the mission to move towards accessibility
+                    and the specific guide I learned it from.[3]
+                    <br><br>
+                    "There should be no barriers to fun," is written in small script at the bottom of the contents of the
+                    well put together resource for game developers. It's this belief that everyone deserves to have fun, including
+                    disabled people, that these guidelines, laws, and checklists exist. They aren't there to make projects run longer
+                    or create more production costs, but rather to be able to give more entry to play to the 33 million disabled gamers
+                    only in the USA. 33 million is the statistic AbleGamers shared in 2018 and I've bet that number has grown 
+                    in the past 6 years after the pandemic introduced more people to the potential gaming has in creating
+                    community and being a tool for further social interaction that is accessible remotely.
+                    <br><br>
+                    On the right, I've made a list of the checklist and various levels of accesibility that disabled 
+                    gamers with different abilities have agreed upon that would made a big positive impact in their gaming experience.
+                    Although the list seems long, and some features might be more difficult to program or design around, that's the reason why
+                    they are split off in different levels and disabilities characteristics. Level 1 is distinguished as "good" meaning the options 
+                    game that falls under this level would be at decent accesibility standing. However, the game could definitely improve and be 
+                    better, so that's why level 2 exists with more options but might be a bit more tricky to implement.
+                    Level 3 is refered to as as the "best" because overall if a video game is designed with all the options in level 1, 2, and 3 
+                    that makes it a really great inclusive game. However, the options in level 3 are considered to be expensive.
+                    <br><br>
+                    But don't freak out! As AbleGamers said, by adding the first two levels from the start and early developemtn, these 
+                    accessibility options should be cheap and take minimal time to implement. If accesibility is considered as an afterthought
+                    or towards the end of the product, then it becomes much harder to work around or add in. Therefore, they describe these
+                    suggested tiers like so:
+                    <br><br>
+                    <strong>Level 1</strong> describes the bare minimum level of accessibility that you should have in your game--you
+                    will find that many of these things are already being included as standard-practice.
+                    <br><br>
+                    <strong>Level 2</strong> outlines the best compromise between the need for greater accesibility and the ease of implementation.
+                    <br><br>
+                    <strong>Level 3</strong> demonstrates what accesibility would be like in an ideal world where the barriers in the gaming space are 
+                    almost all but gone.
+                    <br><br>
+                    Having gaming options is key. Being able to find games that one can play is important, no matter the disability. Thus, two truths can
+                    exist at the same time; 1) The gaming space can acknowlge that 100% inclusion is not feasible. 2) Access to entertainment and creating more
+                    accessible alternatives is possible.
+                    <br><br>
+                    <b>"Developers simply need to be aware that adding accesibility is the right thing to do, even though it won't bring a large profit boost."</b>
+                    <br><br>
+                    Some facts to consider:
+                    <ul tabindex="0">
+                        <li tabindex="0">50% of the aging gaming population has or will have vision problems in their lifetime.</li>
+                        <li tabindex="0">10% of the men demographic in gaming is color blind.</li>
+                        <li tabindex="0">Quote from a disabled gamer: "Let me play."
+                        </li>
+                    </ul>
+                </p>
+        </section>
+        <br>
+        <section id="second" tabindex=0>
+            <h1 tabindex=0  id="vocan">Accessibility Guidelines for PC and Console Games</h1>
+            <h2 tabindex="0" style="font-size:medium">Visual</h2>
+            <ul tabindex="0">
+                <li tabindex="0">Level 1 (Good)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Changeable Text Colors</li>
+                    <li tabindex="0">Changeable Font Sizes</li>
+                    <li tabindex="0">Color-blind Options</li>
+                    <li tabindex="0">High-contrast Target Reticle</li>
+                    <li tabindex="0">Enemy Marking</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 2 (Better)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Customizable Fonts</li>
+                    <li tabindex="0">Customized HUDS</li>
+                    <li tabindex="0">Map Recoloring Options / Alternative Views</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 3 (Best)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Speed Settings</li>
+                    <li tabindex="0">Text-to-Speech Input</li>
+                </ul>
+            </ul>
+
+            <h2 tabindex="0" style="font-size:medium">Hearing</h2>
+            <ul tabindex="0">
+                <li tabindex="0">Level 1 (Good)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Closed Captioning
+                    </li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 2 (Better)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Changeable Fonts</li>
+                    <li tabindex="0">Changeable Text Colors</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 3 (Best)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Options to Include Ambient Noise as Text Output</li>
+                    <li tabindex="0">Alternative Reactionary Input</li>
+                </ul>
+            </ul>
+
+            <h2 tabindex="0" style="font-size:medium">Mobility</h2>
+            <ul tabindex="0">
+                <li tabindex="0">Level 1 (Good)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Remappable Keys</li>
+                    <li tabindex="0">Alternative Configuration</li>
+                    <li tabindex="0">Camera Controls</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 2 (Better)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Third Party Access (No Game Guard)</li>
+                    <li tabindex="0">Movable/Resizable UI</li>
+                    <li tabindex="0">Macroability: Let me Make My Own Stuff</li>
+                    <li tabindex="0">Difficulty Settings and Fail Safes: Not Just A Mobility Issue</li>
+                    <li tabindex="0">Save Points</li>
+                    <li tabindex="0">Sensitivity Sliders</li>
+                    <li tabindex="0">Click-to-Move / Mouse-to-Move</li>
+                    <li tabindex="0">Assists</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 3 (Best)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Input devices</li>
+                    <li tabindex="0">Speed settings </li>
+                </ul>
+            </ul>
+
+            <h2 tabindex="0" style="font-size:medium">Cognitive</h2>
+            <ul tabindex="0">
+                <li tabindex="0">Level 1 (Good)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Tutorial</li>
+                    <li tabindex="0">Sandbox Modes</li>
+                    <li tabindex="0">Difficulty Levels</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 2 (Better)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Training Levels</li>
+                    <li tabindex="0">Intuitive Menus</li>
+                </ul>
+            </ul>
+            <ul tabindex="0">
+                <li tabindex="0">Level 3 (Best)</li>
+                <ul tabindex="0">
+                    <li tabindex="0">Enemy Marking</li>
+                    <li tabindex="0">Speed Settings</li>
+                    <li tabindex="0">Auto-pass</li>
+                    <li tabindex="0">Perspective</li>
+                    <li tabindex="0">Reward System Balance</li>
+                </ul>
+            </ul>
+        </section>
+ 
+
+        </div>
+        <div class="why">
+            <section id="fourth">
+                <div class="checklist" role="region" tabindex="0">
+                    <table tabindex=0>
+                        <caption tabindex=0>
+                            <p tabindex=0>The following table is a checklist proposed by alumns of Masters in Video Game Creation program from Universidad de la Laguna (Vela, J. 2011)[4]
+                                This was derived from the book, "Buenas prácticas de accesibilidad en videojuegos" published by the Government of Spain.
+                                <br><br>
+                                I translated it from Spanish to English, and turned it into a table instead of posting it in PDF format so people are able to use it if they wished and further modified it.
+                                It is supposed be used as a test for accessibility in video game design during the development process. The more points, the better the accessibility level gets.
+
+                                <br><br>
+                            </p>
+                        </caption>
+                        <div class="top">
+                        <thead tabindex=0>
+                            <tr tabindex=0>
+                                <th tabindex=0>PARAMETERS</th>
+                                <th tabindex=0>Yes (2 Points)</th>
+                                <th tabindex=0>Sometimes (1 Point) </th>
+                                <th tabindex=0>No (0 Points)</th>
+                                <th tabindex=0>TOTAL </th>
+                            </tr>
+                        </thead>
+                        </div>
+                        <tbody tabindex=0>
+                            <tr tabindex=0>
+                                <th tabindex=0>Shortcuts and Direct Access</th>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>The most important functions of the game are accesssible with just one button</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Avoid the multiple combinations of keys for shortcuts or direct access</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <th tabindex=0><b>Tutorials</b></th>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <th tabindex=0>Game Management</th>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Avoid the use of multiple simultaneos buttons or keys to play/manage the game </td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allow to control the speed of the game</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>The game does not exclusively depend on the color to distinguish objects/information, it usues other variables like shape or size</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <th tabindex=0>Customization</th>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows the customization of color contrast, brightness, and color of the game</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows the complete customization of controls of the game. Allows elimination of certain controls</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows to adjust the sensibility of the controls</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows to activate or deactivate subtitles</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows to configure the velocity of the subtitles. Allows to configure the sound effects, vibration, ect. </td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows to increase the font and graphics size</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows to adjust the details in the graphics</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Allows to adjust the sounds, talking and sound effects seperately. Allows to adjust the velocity of the narration or voice when off.</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <th tabindex=0>Contents</th>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Use simple and clear language, with instructions easy to understand</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Incorporate clear subtitles and that are easy to read</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Always support the visual actions with sounds or vibrations with references</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <td tabindex=0>Describe in a clear and consice mode the visual actions that occur in the game (audio descriptions or narration) </td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>- </td>
+                            </tr>
+                            <tr tabindex=0>
+                                <th tabindex=0>TOTAL</th>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                                <td tabindex=0>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+        </div>
+
+    </main>
+
+    <footer tabindex=0>
+        <ul class="footer-list">
+                <li tabindex=0 ><a href="/videoGames/home.html">About</a></li>
+                <li tabindex=0 ><a href="/videoGames/CVAA.html">Video Accessibility Act</a></li>
+                <li tabindex=0 ><a href="/videoGames/history.html">History of Game Dev</a></li>
+                <li tabindex=0 ><a href="/videoGames/guidelines.html">Dev Guidelines</a></li>
+                <li tabindex=0 ><a href="/videoGames/perspectives.html">Gamer's Perspectives</a></li>
+                <li tabindex=0 ><a href="/videoGames/resources.html">Resources for Dev</a></li>
+                <li tabindex=0 ><a href="/videoGames/bibliography.html">Bibliography</a></li>
+                <li tabindex=0 ><a href="/videoGames/contact.html">Contact Me</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
